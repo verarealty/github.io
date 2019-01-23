@@ -11,4 +11,4 @@ Vera Realty LLC
 
 ![screenshot of sample](https://verarealty.github.io/assets/images/search-on-map.png)
 
-[![screenshot of sample](https://verarealty.github.io/assets/images/button.png)](https://www.verarealty.com)
+[![screenshot of sample](https://verarealty.github.io/assets/images/button2.png)](https://www.verarealty.com)
