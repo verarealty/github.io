@@ -5,12 +5,12 @@ a {
     outline: none;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    color: #8d4ce0;
+    color: #fff;
 }
 
 a:focus,
 a:hover {
-    color: #f17272;
+    color: #8d4ce0;
 	text-decoration: none;
 }
 
