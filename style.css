@@ -314,9 +314,8 @@ section:focus {
     color: #fff;
 }
 
-.footer-list li a:hover {
-    color: #f17272;
-}
+.footer-list li a:hover {color: #111;}
+.footer-area a {color: #111;}
 
 blockquote {
     border-left-color: #f17272;
