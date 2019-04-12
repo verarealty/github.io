@@ -9,6 +9,6 @@ Vera Realty LLC
 
 
 
-![Vera Realty](https://verarealty.github.io/assets/images/search-on-map.png)
+![Vera Realty](https://verarealty.github.io/assets/images/search-on-map1.png)
 
 [![Перейти на сайт](https://verarealty.github.io/assets/images/button2.png)](https://www.verarealty.com)
