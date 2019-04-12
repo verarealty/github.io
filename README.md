@@ -1,4 +1,4 @@
--> ![screenshot of sample](https://verarealty.github.io/assets/images/Logo-blue.png) <-
+|| ![screenshot of sample](https://verarealty.github.io/assets/images/Logo-blue.png)
 
 
 Vera Realty LLC
