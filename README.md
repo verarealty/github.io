@@ -1,5 +1,4 @@
-Example text {style="text-align:center"}
-![screenshot of sample](https://verarealty.github.io/assets/images/Logo-blue.png)
+![screenshot of sample](https://verarealty.github.io/assets/images/Logo-blue.png) {style="text-align:center"}
 
 Vera Realty LLC
 =====================
