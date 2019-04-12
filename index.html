@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="stylesheet" href="/assets/css/animate.css">
         <link rel="stylesheet" href="/assets/css/normalize.css">
+        <link rel="stylesheet" href="/assets/css/defina.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="/assets/css/responsive.css">
         <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -35,22 +36,20 @@
         </div>
 
         <header class="header-area">
-            <nav id="navbar" class="navbar mainmenu-area fixed-top" style="border-radius:0;" data-spy="affix" data-offset-top="200">
+            <nav id="navbar" class="navbar mainmenu-area fixed-top" style="border-radius:0;display: block" data-spy="affix" data-offset-top="200">
                 <div class="container">
                     <div class="equal-height">
+
                         <div class="site-branding">
                             <a href="/">
                                 <img src="/assets/images/Logo-white.png" class="brand" alt="logotype" style="height: 54px;"/>
                             </a>
                         </div>
-                        <div class="primary-menu">
+                        <div class="primary-menu navbar-collapse collapse">
                             <ul class="nav">
                                 <li class="active"><a href="#home-page" class="hex">Home</a></li>
                                 <li><a href="#about-page" class="hex">About</a></li>
                                 <li><a href="#service-page" class="hex">Services</a></li>
-<!--                                <li><a href="#portfolio-page">Portfolio</a></li>
-                                <li><a href="#blog-page">Blog</a></li>
-                                <li><a href="#price-page">Pricing</a></li>-->
                                 <li><a href="#team-page" class="hex">Team</a></li>
                                 <li><a href="#faq-page" class="hex">FAQ</a></li>
                             </ul>
@@ -65,35 +64,34 @@
 
         <div id="home-page"></div>
 
-
-            <section class="hero-area gray-bg" style="background-image: url('/assets/images/join-hero.jpg');">
-                <div style="background-color: rgba(25, 27, 27, 0.47); text-shadow: 1px 1px 2px #000; width: 100%;display: block;padding: 100px 0;min-height: 100vh;">
-                    <div class="container">
-                        <div class="row equal-height">
-                            <div class="col-md-6">
-                                <h1 class="head-title wow fadeInRight" data-wow-delay="0.3s">Real Estate Broker.</h1>
-                                <div class="desc wow fadeInRight" data-wow-delay="0.4s">
-                                    <p class="text-light">Vera Realty LLC &copy; Desktop Tools for your business or eCommerce Store</p>
-                                </div>
-                                <div class="space-30"></div>
-                                <a href="#service-page"  class="hex bttn-1 wow fadeInRight" data-wow-delay="0.5s">Our Company</a>
-                                <a data-fancybox href="https://www.youtube.com/watch?v=gZWXmSM5Rfg" class="popup-video wow fadeInRight" data-wow-delay="0.5s">
-                                    <button type="button" class="btn btn-default text-dark" style="background-color: transparent;color: #fff;border-radius: 50em;width: 36px;height: 36px;">
-                                        <i class="fas fa-play"></i>
-                                    </button> 
-                                    Story 2:13
-                                </a>
+        <section class="hero-area gray-bg" style="background-image: url('/assets/images/join-hero.jpg');">
+            <div style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(141, 76, 224, 0.48));text-shadow: 1px 1px 2px #000;width: 100%;display: block;padding: 100px 0;min-height: 100vh;">
+                <div class="container">
+                    <div class="row equal-height">
+                        <div class="col-md-6" style="padding-top: 50px;">
+                            <h1 class="head-title wow fadeInRight" data-wow-delay="0.3s">Real Estate Broker.</h1>
+                            <div class="desc wow fadeInRight" data-wow-delay="0.4s">
+                                <p class="text-light">Vera Realty LLC &copy; Desktop Tools for your business or eCommerce Store</p>
                             </div>
-                            <div class="col-md-6 text-right" style="padding-top: 100px;">
-                                <div class="hidden visible-xs visible-sm space-50"></div>
-                                <figure class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                                    <img src="/assets/images/search-on-map.png" alt="illustration">
-                                </figure>
-                            </div>
+                            <div class="space-30"></div>
+                            <a href="#service-page"  class="hex bttn-1 wow fadeInRight" data-wow-delay="0.5s">Our Company</a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=gZWXmSM5Rfg" class="popup-video wow fadeInRight" data-wow-delay="0.5s">
+                                <button type="button" class="btn btn-default text-dark" style="background-color: transparent;color: #fff;border-radius: 50em;width: 36px;height: 36px;">
+                                    <i class="fas fa-play"></i>
+                                </button> 
+                                Story 2:13
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-right" style="padding-top: 100px;">
+                            <div class="hidden visible-xs visible-sm space-50"></div>
+                            <figure class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+                                <img src="/assets/images/search-on-map.png" alt="illustration">
+                            </figure>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         
             <section class="about-area section-padding" id="about-page">
                 <div class="container">
@@ -150,7 +148,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                 <div class="single-service two mt-4">
                     <a href="https://github.com/verarealtycom/verafund/blob/master/README.md">
                         <img src="https://vera.fund/uploads/2019/02/apple-touch-icon.png" alt="Vera.Fund"/>
@@ -161,7 +159,7 @@
                     <p>Краудфандинговая платформа по вкладу в недвижимость</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                 <div class="single-service two mt-4">
                     <a href="https://github.com/verarealty/verarealty.github.io/blob/master/README.md">
                         <img src="/assets/images/2.png" alt="Vera Realty">
@@ -174,7 +172,7 @@
                     <p>Платформа поиска недвижимости в США и Москве</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                 <div class="single-service two mt-4">
                     <div class=""><img src="/assets/images/3.png" alt="Service Icon"></div>
                     <h3 class="title font-weight-bold">
@@ -183,7 +181,7 @@
                     <p>Сайт-Платформа корпорации по недвижимости в США</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                 <div class="single-service two mt-4">
                     <div class=""><img src="/assets/images/4.png" alt="Service Icon"></div>
                     <h3 class="title font-weight-bold">
@@ -192,7 +190,7 @@
                     <p>The standard chunk of Lorem Ipsum used since the 1500s</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                 <div class="single-service two mt-4">
                     <div class=""><img src="/assets/images/5.png" alt="Service Icon"></div>
                     <h3 class="title font-weight-bold">
@@ -201,7 +199,7 @@
                     <p>The standard chunk of Lorem Ipsum used since the 1500s is</p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                 <div class="single-service two mt-4">
                     <div class=""><img src="/assets/images/6.png" alt="Service Icon"></div>
                     <h3 class="title font-weight-bold">
@@ -270,7 +268,7 @@
 					<div class="team-thumb"><img src="/assets/images/nkp0.jpg" alt="Nickolay Polushkin"></div>
 					<div class="team-content">
 						<h4 class="name">Nickolay Polushkin</h4>
-						<h5 class="position">CEO</h5>
+						<span class="position">CEO</span>
 						<div class="social-list">
 							<a href="https://www.facebook.com/nick.pro.33"><i class="fab fa-facebook-f"></i></a>
 							<a href="#"><i class="fab fa-twitter"></i></a>
@@ -286,7 +284,7 @@
 					<div class="team-thumb"><img src="/assets/images/ntc0.jpg" alt="Natalia Chalenko"></div>
 					<div class="team-content">
 						<h4 class="name">Natalia Chalenko</h4>
-						<h5 class="position">Personal Assistant</h5>
+						<span class="position">Personal Assistant</span>
 						<div class="social-list">
 							<a href="#"><i class="fab fa-facebook-f"></i></a>
 							<a href="#"><i class="fab fa-twitter"></i></a>
@@ -302,7 +300,7 @@
 					<div class="team-thumb"><img src="/assets/images/0.jpg" alt="Michael Podkopaev"></div>
 					<div class="team-content">
 						<h4 class="name">Michael Podkopaev</h4>
-						<h5 class="position">General manager</h5>
+						<span class="position">General manager</span>
 						<div class="social-list">
 							<a href="#"><i class="fab fa-facebook-f"></i></a>
 							<a href="#"><i class="fab fa-twitter"></i></a>
@@ -318,7 +316,7 @@
 					<div class="team-thumb"><img src="/assets/images/ab0.jpg" alt="Alex Brik"></div>
 					<div class="team-content">
 						<h4 class="name">Alex Brik</h4>
-						<h5 class="position">Real Estate Broker Associate</h5>
+						<span class="position">Real Estate Broker Associate</span>
 						<div class="social-list">
 							<a href="https://www.facebook.com/alex.brik.5"><i class="fab fa-facebook-f"></i></a>
 							<a href="#"><i class="fab fa-twitter"></i></a>
