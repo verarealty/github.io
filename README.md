@@ -1,4 +1,4 @@
-<img src="/assets/images/Logo-blue.png" width="100" alt="VeraRealty" />
+<img src="/assets/images/Logo-blue.png" width="200" alt="VeraRealty" />
 
 
 Vera Realty LLC
