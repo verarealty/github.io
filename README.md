@@ -1,4 +1,4 @@
-![screenshot of sample](/assets/images/Logo-blue.png)
+<img src="/assets/images/Logo-blue.png" width="100" alt="VeraRealty" />
 
 
 Vera Realty LLC
