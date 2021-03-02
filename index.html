@@ -36,14 +36,7 @@
                 <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" rel="stylesheet">
-		<style>
-			#map-container iframe {
-				width: 100%;
-				height: 400px;
-				-webkit-filter: grayscale(100%);
-				filter: grayscale(100%);
-			}
-		</style>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
     </head>
     <body data-spy="scroll" data-target=".primary-menu">
         <div class="preloader">
@@ -86,25 +79,22 @@
             <div style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(141, 76, 224, 0.48));text-shadow: 1px 1px 2px #000;width: 100%;display: block;padding: 100px 0;min-height: 100vh;">
                 <div class="container">
                     <div class="row equal-height">
-                        <div class="col-md-6" style="padding-top: 50px;">
+                        <div class="col-md-6" style="padding-top: 150px;">
                             <h1 class="head-title wow fadeInRight" data-wow-delay="0.3s">Real Estate Broker.</h1>
                             <div class="desc wow fadeInRight" data-wow-delay="0.4s">
                                 <p class="text-light">Vera Realty LLC &copy; Desktop Tools for your business or eCommerce Store</p>
                             </div>
                             <div class="space-30"></div>
                             <a href="#service-page"  class="hex bttn-1 wow fadeInRight" data-wow-delay="0.5s">Our Company</a>
-                            <a data-fancybox href="https://www.youtube.com/watch?v=gZWXmSM5Rfg" class="popup-video wow fadeInRight" data-wow-delay="0.5s">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=HXZVVKwBSNk" class="popup-video wow fadeInRight" data-wow-delay="0.5s">
                                 <button type="button" class="btn btn-default text-dark" style="background-color: transparent;color: #fff;border-radius: 50em;width: 36px;height: 36px;">
                                     <i class="fas fa-play"></i>
                                 </button> 
-                                Story 2:13
+                                View Story - 02:13
                             </a>
                         </div>
                         <div class="col-md-6 text-right" style="padding-top: 100px;">
                             <div class="hidden visible-xs visible-sm space-50"></div>
-                            <figure class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-                                <img src="/assets/images/search-on-map.png" alt="illustration">
-                            </figure>
                         </div>
                     </div>
                 </div>
@@ -133,7 +123,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="col-sm-offset-1 col-sm-10">
-                                <div class="about-content">
+                                <div class="about-content text-dark">
                                     <div class="about-content-title">Vera Realty company provides services 
                                         for the purchase and rental 
                                     of real estate in Moscow and Miami.</div>
@@ -160,7 +150,7 @@
             <div class="col-md-6 col-md-offset-3">
                 <div class="page-title">
                     <h3 class="title text-dark">Products Of "Vera Realty LLC"</h3>
-                    <div class="desc">There are many variations of passages of Lorem Ipsum</div>
+                    <div class="desc">Check out the entire list of Vera Realty products</div>
                     <div class="space-60"></div>
                 </div>
             </div>
@@ -488,17 +478,17 @@
 	</div>
 </section>
 	    
-<div id="map-container" style="margin-bottom: -6px;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.224662049841!2d-80.12013068556031!3d25.993456983532123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ab5db5999c7d%3A0xce6f3129860ffd40!2sVera+Realty!5e0!3m2!1sru!2sfr!4v1548156666112" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+<section style="display: block;width: 100%;overflow: hidden;height: 570px">
+    <div id="map" style="width:100%;height:600px;"></div>
+</section>
 
-	<footer class="footer-area" style="background-image: url('assets/images/footer-shape.png'); background-position: left top;">
+	<footer class="footer-area">
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row start-height">
 						<div class="col-xs-12 col-sm-5">
 							<h4 class="text-white">Vera Realty</h4>
-							<p>Copyright &copy; 2019 Vera Realty.</p>
+							<p>Copyright &copy; 2021 Vera Realty.</p>
 							<div class="hidden visible-xs space-30"></div>
 						</div>
 						<div class="col-xs-12 col-sm-4">
@@ -557,7 +547,28 @@
 	<script src="/assets/js/wow.min.js"></script>
 	<script src="/assets/js/scrollUp.min.js"></script>
 	<script src="/assets/js/main.js"></script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 	<script>
+		
+		mapboxgl.accessToken = 'pk.eyJ1IjoidmVyYS1yZWFsdHkiLCJhIjoiY2tsbXlvcDdlMGR3OTJvcXJrb2o1aWprNCJ9.TeSUMSEzd6F3seaGiPfQcQ';
+		const address = '2999 NE 191st ST, STE 907, Aventura FL, 33180';
+		const img = 'https://verarealty.ru/wp-content/themes/verarealty/img/office/2999-NE.jpg';
+		var map = new mapboxgl.Map({
+		    container: 'map',
+		    style: 'mapbox://styles/mapbox/light-v10',
+		    center: [-80.1439131, 25.9526926],
+		    zoom: 14
+		});
+
+		var marker = new mapboxgl.Marker({
+		    color: "#455694",
+		    draggable: false
+		})
+		.setLngLat([-80.1439131, 25.9526926])
+		.setPopup(new mapboxgl.Popup()
+		.setHTML(`<img src="${img}" style="width:100%;" alt="${address}" /><p class="btn-block mt-2 text-center"><small>${address}</small></p>`))
+		.addTo(map);
+		
 		window.onscroll = function() {scrollFunction();};
 		var s = document.getElementById("navbar").style.top;
 		
